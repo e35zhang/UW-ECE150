@@ -7,11 +7,12 @@
 //============================================================================
 
 #include <iostream>
-using namespace std;
+
+int main();
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
-	cout << "this code works successfully on Surface 3!" << endl;
+	std::cout << "Hello World!";
+	std::cout << std::endl;
 
 	return 0;
 }
