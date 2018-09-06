@@ -11,5 +11,7 @@ using namespace std;
 
 int main() {
 	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	cout << "this code works successfully on Surface 3!" << endl;
+
 	return 0;
 }
