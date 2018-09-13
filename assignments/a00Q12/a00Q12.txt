@@ -1,0 +1,3 @@
+1. it will return an error of "dividion by zero"
+2. it will print 10
+3. it will print 10

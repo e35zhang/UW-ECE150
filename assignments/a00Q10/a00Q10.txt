@@ -1,0 +1,1 @@
+No. Because keyword Identifiers are reserved with special meaning. a function prototype cannot be defined by keyword identifiers. 

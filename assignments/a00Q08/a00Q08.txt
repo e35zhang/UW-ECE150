@@ -1,0 +1,1 @@
+std::endl can flushes the output buffer and make the program more stable.
