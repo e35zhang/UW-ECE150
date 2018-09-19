@@ -30,25 +30,24 @@ int main(){
 
 	for(int i=0; i<12; i++){
 		double range = computed_range(600, angles[i], 0);
-		std::cout << "The range of the banana reaches for the launch angle of "
-				<<angles[i] << "degrees is " << range << "\n";
+		std::cout << "The range the banana reaches for the launch angle of " <<angles[i] << " degrees is " << range << std::endl;
+
 	}
 
-	std::cout << std::endl;
 
 
-	//Part B
-	double max_range = 0;
-	for(int i=0; i<12; i++){
-			double theta = angles[i]/180*3.14159265358979;
-			double range = computed_range(600, theta, 10);
-			if (range > max_range){
-				max_range = range;
-			}
-		}
-
-		std::cout << max_range;
-		std::cout << std::endl;
+//	//Part B
+//	double max_range = 0;
+//	for(int i=0; i<12; i++){
+//			double theta = angles[i]/180*3.14159265358979;
+//			double range = computed_range(600, theta, 10);
+//			if (range > max_range){
+//				max_range = range;
+//			}
+//		}
+//
+//		std::cout << max_range;
+//		std::cout << std::endl;
 
 
 	return 0;
