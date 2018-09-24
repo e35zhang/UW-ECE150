@@ -29,8 +29,13 @@ int main(){
 	double angles[12] = {10, 20, 25.5, 30, 40, 50, 55.5, 60, 70, 75.5, 80, 90};
 
 	for(int i=0; i<12; i++){
+	    if(angles[i] != 90){
 		double range = computed_range(600, angles[i], 0);
 		std::cout << "The range the banana reaches for the launch angle of " <<angles[i] << " degrees is " << range << std::endl;
+	    }
+            else{
+		std::cout << "The range the banana reaches for the launch angle of " <<angles[i] << " degrees is 0" <<std::endl;
+	    }. // instead of return a small none 0 number. Hi friend, I followed you lol!
 
 	}
 
@@ -69,13 +74,13 @@ double gravity(){
 }
 
 double computed_range(double velocity, double theta, double h){
-	double vx = horizontal_velocity(velocity, theta);
-	double vy = vertical_velocity(velocity,  theta);
-	double g = gravity();
-	return vx*vy/g + vx * std::sqrt(vy*vy + 2 * g * h)/g;
+	return horizontal_velocity(velocity, theta)/gravity()*(vertical_velocity(velocity, theta)
+    	   +sqrt(vertical_velocity(velocity, theta)*vertical_velocity(velocity, theta)+2*gravity()*h));
+
 }
 
-
+// This is the expression of Vx/g*(Vy+(Vy^2+2*g*h)^(1/2))
+// This calculate 2 less times and do not store values (save RAM)
 
 
 
